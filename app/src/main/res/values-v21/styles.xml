@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--修改checkbox的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--涟漪效果的颜色-->
+        <item name="android:colorControlHighlight">#ff0000</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+        <!--在这里设置activity进入的统一动画格式-->
+    </style>
+
+    <style name="myTheme" parent="android:Theme.Material">
+        <!--允许使用translation-->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+        <!--z指定进入和退出trainslation-->
+        <item name="android:windowEnterAnimation">@android:transition/explode</item>
+        <item name="android:windowExitAnimation">@android:transition/explode</item>
+
+        <!--指定shard elenmts trainslation-->
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/slide_top</item>
+    </style>
+</resources>

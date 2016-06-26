@@ -10,30 +10,31 @@
     tools:context="com.example.animationdemo.MainActivity">
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ripple1"
-        android:text="Hello World!"
-        android:id="@+id/button2" />
+        android:text="Hello World!" />
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:background="@drawable/ripple2"
-        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/button2"
+        android:background="@drawable/ripple2"
+        android:onClick="toFirst"
+        android:text="进入FirstActivity" />
 
     <Button
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="52dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="进入5.0动画的"
         tools:targetApi="lollipop" />
 </RelativeLayout>

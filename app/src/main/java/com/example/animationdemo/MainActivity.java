@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void toFirst(View view) {
+        Intent intent = new Intent(this, FirstActivity.class);
+        startActivity(intent);
+    }
 }
