@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#ffffff00">
+    <!--上面是他的涟漪的颜色-->
+    <!--开始扩散后还没触及到的内容-->
+    <item android:drawable="@android:color/holo_green_dark" />
+    <!--button的内容-->
+    <item
+        android:id="@+id/mask"
+        android:drawable="@android:color/holo_blue_bright" />
+</ripple>
