@@ -1,5 +1,6 @@
 package com.example.animatorapp;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.transition.Fade;
@@ -18,6 +19,7 @@ public class TransLateActivity1 extends BaseActivity {
         setupWindowAnimations();
         bindData();
         setupLayout();
+        setupToolbar();
     }
 
     private void bindData() {
@@ -29,12 +31,12 @@ public class TransLateActivity1 extends BaseActivity {
     private void setupWindowAnimations() {
         Visibility enterTransition = buildEnterTransition();
         getWindow().setEnterTransition(enterTransition);
+        getWindow().setExitTransition(enterTransition);
     }
 
     private Visibility buildEnterTransition() {
         Fade enterTransition = new Fade();
         enterTransition.setDuration(500);
-//        enterTransition.excludeTarget(R.id.square_red, true);
         return enterTransition;
     }
 
@@ -42,14 +44,20 @@ public class TransLateActivity1 extends BaseActivity {
         findViewById(R.id.sample1_button1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(TransLateActivity1.this, TransLateActivity2.class);
+                i.putExtra(EXTRA_SAMPLE, sample);
+                i.putExtra(EXTRA_TYPE, TYPE_PROGRAMMATICALLY);
+                transitionTo(i);
             }
         });
 
         findViewById(R.id.sample1_button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(TransLateActivity1.this, TransLateActivity2.class);
+                i.putExtra(EXTRA_SAMPLE, sample);
+                i.putExtra(EXTRA_TYPE, TYPE_XML);
+                transitionTo(i);
             }
         });
 

@@ -21,7 +21,8 @@
         <activity
             android:name=".TransLateActivity1"
             android:label="@string/title_activity_base_activitiy1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TransLateActivity2"></activity>
     </application>
 
 </manifest>

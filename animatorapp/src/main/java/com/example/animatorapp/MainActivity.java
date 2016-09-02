@@ -1,7 +1,6 @@
 package com.example.animatorapp;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.transition.Slide;
@@ -10,7 +9,7 @@ import android.view.Gravity;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private List<Sample> samples;
     RecyclerView recyclerView;
 
@@ -21,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setupWindowAnimations();
         initDatas();
         setupLayout();
+        setupToolbar();
     }
 
     private void setupWindowAnimations() {
-        // Re-enter transition is executed when returning to this activity
-        Slide slideTransition = new Slide();
-        slideTransition.setSlideEdge(Gravity.LEFT);
+        Slide slideTransition = new Slide();//划出
+        slideTransition.setSlideEdge(Gravity.LEFT);//从左侧
         slideTransition.setDuration(500);
         getWindow().setReenterTransition(slideTransition);
         getWindow().setExitTransition(slideTransition);
