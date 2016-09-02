@@ -6,4 +6,5 @@
     <dimen name="spacing_normal">8dp</dimen>
     <dimen name="elevation_header">4dp</dimen>
     <integer name="anim_duration_medium">300</integer>
+    <integer name="anim_duration_long">500</integer>
 </resources>
