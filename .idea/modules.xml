@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/animation.iml" filepath="$PROJECT_DIR$/animation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animatorapp/animatorapp.iml" filepath="$PROJECT_DIR$/animatorapp/animatorapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/vectoranimator/vectoranimator.iml" filepath="$PROJECT_DIR$/vectoranimator/vectoranimator.iml" />
     </modules>
