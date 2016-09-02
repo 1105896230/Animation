@@ -30,9 +30,12 @@ package com.example.animatorapp;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.util.Pair;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -77,12 +80,23 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
             public void onClick(View v) {
                 switch (holder.getAdapterPosition()) {
                     case 0:
-                        Intent intent = new Intent(context, TransLateActivity1.class);
-                        context.startActivity(intent);
+                        transitionToActivity(TransLateActivity1.class, sample);
                         break;
                 }
             }
         });
+    }
+
+    private void transitionToActivity(Class target, Sample sample) {
+        final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants((Activity) context, true);
+        startActivity(target, pairs, sample);
+    }
+
+    private void startActivity(Class target, Pair<View, String>[] pairs, Sample sample) {
+        Intent i = new Intent(context, target);
+        ActivityOptionsCompat transitionActivityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) context, pairs);
+        i.putExtra("sample", sample);
+        context.startActivity(i, transitionActivityOptions.toBundle());
     }
 
     @Override

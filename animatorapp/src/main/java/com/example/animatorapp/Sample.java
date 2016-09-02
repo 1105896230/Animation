@@ -1,9 +1,7 @@
 package com.example.animatorapp;
 
 import android.databinding.BindingAdapter;
-import android.os.Build;
 import android.support.annotation.ColorRes;
-import android.support.annotation.RequiresApi;
 import android.support.v4.graphics.drawable.DrawableCompat;
 import android.widget.ImageView;
 
@@ -34,10 +32,9 @@ public class Sample implements Serializable {
         return color;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @BindingAdapter("colorTint")
     public static void setColorTint(ImageView view, @ColorRes int color) {
-        DrawableCompat.setTint(view.getDrawable(), view.getContext().getColor(color));
+        DrawableCompat.setTint(view.getDrawable(), view.getContext().getResources().getColor(color));
 //        view.setColorFilter(color, PorterDuff.Mode.SRC_IN);
     }
 }
