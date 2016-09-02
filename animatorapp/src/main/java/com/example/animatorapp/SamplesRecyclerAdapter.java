@@ -90,6 +90,9 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
                         //修改物体的位置等
                         transitionToActivity(AnimationsActivity1.class, sample);
                         break;
+                    case 3:
+                        transitionToActivity(RevealActivity.class, holder, sample, R.string.transition_reveal1);
+                        break;
                 }
             }
         });
@@ -97,6 +100,12 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
 
     private void transitionToActivity(Class target, Sample sample) {
         final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants((Activity) context, true);
+        startActivity(target, pairs, sample);
+    }
+
+    private void transitionToActivity(Class target, BindingHolder viewHolder, Sample sample, int transitionName) {
+        final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants((Activity) context, false,
+                new Pair<>(viewHolder.binding.sampleIcon, context.getString(transitionName)));
         startActivity(target, pairs, sample);
     }
 

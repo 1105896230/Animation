@@ -61,7 +61,7 @@ public class AnimationsActivity2 extends BaseActivity {
             @Override
             public void onTransitionEnd(Transition transition) {
                 getWindow().getEnterTransition().removeListener(this);
-
+                TransitionManager.go(scene0);
             }
         });
     }
