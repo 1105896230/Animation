@@ -15,6 +15,7 @@ public class TransLateActivity1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_translate);
+        bindData();
     }
 
     private void bindData() {
