@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BaseActivitiy1"
+            android:name=".TransLateActivity1"
             android:label="@string/title_activity_base_activitiy1"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

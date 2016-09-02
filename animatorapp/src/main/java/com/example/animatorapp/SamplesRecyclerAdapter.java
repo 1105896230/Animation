@@ -30,6 +30,8 @@ package com.example.animatorapp;
 //                  别人笑我忒疯癫，我笑自己命太贱；
 //                  不见满街漂亮妹，哪个归得程序员？
 
+import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -37,6 +39,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.animatorapp.databinding.ItemSampleLayoutBinding;
+
+import java.util.List;
 
 /**
  * Created by "林其望".
@@ -46,32 +50,54 @@ import com.example.animatorapp.databinding.ItemSampleLayoutBinding;
 
 public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecyclerAdapter.BindingHolder> {
 
-    @Override
-    public BindingHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        ItemSampleLayoutBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.item_sample_layout, parent, false);
-        return new BindingHolder(binding.getRoot());
+    Context context;
+    List<Sample> list;
+
+    public SamplesRecyclerAdapter(Context context, List<Sample> list) {
+        this.context = context;
+        this.list = list;
     }
 
     @Override
-    public void onBindViewHolder(BindingHolder holder, int position) {
+    public BindingHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        ItemSampleLayoutBinding binding = DataBindingUtil.inflate(
+                LayoutInflater.from(parent.getContext()),
+                R.layout.item_sample_layout,
+                parent,
+                false);
+        return new BindingHolder(binding.getRoot(), binding);
+    }
 
+    @Override
+    public void onBindViewHolder(final BindingHolder holder, int position) {
+        final Sample sample = list.get(holder.getAdapterPosition());
+        holder.binding.setSample(sample);
+        holder.binding.sampleLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (holder.getAdapterPosition()) {
+                    case 0:
+                        Intent intent = new Intent(context, TransLateActivity1.class);
+                        context.startActivity(intent);
+                        break;
+                }
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class BindingHolder extends RecyclerView.ViewHolder {
         ItemSampleLayoutBinding binding;
 
-        public BindingHolder(View itemView) {
+        public BindingHolder(View itemView, ItemSampleLayoutBinding binding) {
             super(itemView);
-            binding = DataBindingUtil.bind(itemView);
-        }
-
-        public ItemSampleLayoutBinding getBinding() {
-            return binding;
+            this.binding = binding;
         }
     }
+
+
 }
