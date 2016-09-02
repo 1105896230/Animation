@@ -5,5 +5,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="spacing_normal">8dp</dimen>
     <dimen name="elevation_header">4dp</dimen>
-
+    <integer name="anim_duration_medium">300</integer>
 </resources>

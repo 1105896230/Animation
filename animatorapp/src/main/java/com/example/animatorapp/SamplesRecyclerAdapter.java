@@ -82,6 +82,10 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
                     case 0:
                         transitionToActivity(TransLateActivity1.class, sample);
                         break;
+                    case 1:
+                        //共享元素
+                        transitionToActivity(SharedElementActivity.class, holder, sample);
+                        break;
                 }
             }
         });
@@ -89,6 +93,13 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
 
     private void transitionToActivity(Class target, Sample sample) {
         final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants((Activity) context, true);
+        startActivity(target, pairs, sample);
+    }
+
+    private void transitionToActivity(Class target, BindingHolder viewHolder, Sample sample) {
+        final Pair<View, String>[] pairs = TransitionHelper.createSafeTransitionParticipants((Activity) context, false,
+                new Pair<>(viewHolder.binding.sampleIcon, "square_blue"),
+                new Pair<>(viewHolder.binding.sampleName, "sample_blue_title"));
         startActivity(target, pairs, sample);
     }
 
@@ -105,7 +116,7 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
     }
 
     public class BindingHolder extends RecyclerView.ViewHolder {
-        ItemSampleLayoutBinding binding;
+        public ItemSampleLayoutBinding binding;
 
         public BindingHolder(View itemView, ItemSampleLayoutBinding binding) {
             super(itemView);

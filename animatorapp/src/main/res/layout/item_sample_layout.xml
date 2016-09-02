@@ -26,6 +26,7 @@
             app:colorTint="@{sample.color}" />
 
         <TextView
+            android:id="@+id/sample_name"
             style="@style/Base.TextAppearance.AppCompat.Large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
