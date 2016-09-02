@@ -50,6 +50,7 @@ public class BaseActivity extends AppCompatActivity {
     static final int TYPE_XML = 1;
     void setupToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar==null)return;
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
