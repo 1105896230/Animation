@@ -24,7 +24,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TransLateActivity2" />
         <activity android:name=".TransLateActivity3" />
-        <activity android:name=".SharedElementActivity"></activity>
+        <activity android:name=".SharedElementActivity" />
+        <activity android:name=".AnimationsActivity1" />
+        <activity android:name=".AnimationsActivity2"></activity>
     </application>
 
 </manifest>

@@ -86,6 +86,10 @@ public class SamplesRecyclerAdapter extends RecyclerView.Adapter<SamplesRecycler
                         //共享元素
                         transitionToActivity(SharedElementActivity.class, holder, sample);
                         break;
+                    case 2:
+                        //修改物体的位置等
+                        transitionToActivity(AnimationsActivity1.class, sample);
+                        break;
                 }
             }
         });

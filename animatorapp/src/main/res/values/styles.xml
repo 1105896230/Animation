@@ -56,6 +56,9 @@
     <style name="MaterialAnimations.TextAppearance.Title" parent="android:TextAppearance.Material.Title">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-
+    <style name="MaterialAnimations.Button.Scaled" parent="MaterialAnimations.Button">
+        <item name="android:scaleX">0</item>
+        <item name="android:scaleY">0</item>
+    </style>
 
 </resources>
