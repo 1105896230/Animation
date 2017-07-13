@@ -14,7 +14,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.5" />
-
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintVertical_bias="0.563"
+        android:id="@+id/button2" />
+    <Button
+        android:onClick="toolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用toolBar"
+        app:layout_constraintLeft_toRightOf="@+id/button2"
+        android:layout_marginLeft="79dp"
+        tools:layout_editor_absoluteY="261dp" />
 </android.support.constraint.ConstraintLayout>

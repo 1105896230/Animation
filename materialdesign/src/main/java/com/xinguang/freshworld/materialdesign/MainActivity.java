@@ -16,4 +16,9 @@ public class MainActivity extends AppCompatActivity {
     public void bottoDialog(View view) {
          startActivity(new Intent(this,BottomSheetDialogActivity.class));
     }
+
+    public void toolBar(View view) {
+        startActivity(new Intent(this,ToolBarActivity.class));
+
+    }
 }
