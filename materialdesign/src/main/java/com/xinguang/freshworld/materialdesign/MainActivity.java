@@ -53,4 +53,12 @@ public class MainActivity extends AppCompatActivity {
     public void snake(View view) {
         startActivity(new Intent(this,FABSimpleActivity.class));
     }
+
+    public void textInput(View view) {
+        startActivity(new Intent(this,TextInputSimpleActivity.class));
+    }
+
+    public void bottom(View view) {
+        startActivity(new Intent(this,BottomNavigationActivity.class));
+    }
 }

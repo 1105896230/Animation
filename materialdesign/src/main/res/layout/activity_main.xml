@@ -9,83 +9,108 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <Button
-        android:onClick="bottoDialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="使用BottomDialog"
-        android:id="@+id/button2"
-        tools:layout_editor_absoluteY="182dp"
-        tools:layout_editor_absoluteX="-26dp" />
-    <Button
-        android:onClick="toolBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="使用toolBar"
-        android:id="@+id/button5"
-        tools:layout_editor_absoluteY="75dp"
-        tools:layout_editor_absoluteX="-2dp" />
-    <Button
-        android:onClick="CoordinatorLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="使用CoordinatorLayout"
-        android:id="@+id/button3"
-        tools:layout_editor_absoluteY="134dp"
-        tools:layout_editor_absoluteX="-13dp" />
-    <Button
-        android:onClick="AppBarLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="使用AppBarLayout"
-        android:id="@+id/button4"
-        tools:layout_editor_absoluteY="231dp"
-        tools:layout_editor_absoluteX="-12dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:onClick="jianshu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="简书效果"
-        android:id="@+id/button6"
-        tools:layout_editor_absoluteY="301dp"
-        tools:layout_editor_absoluteX="16dp" />
+            <Button
+                android:onClick="bottoDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用BottomDialog"
+                android:id="@+id/button2"
+                tools:layout_editor_absoluteY="182dp"
+                tools:layout_editor_absoluteX="-26dp" />
+            <Button
+                android:onClick="toolBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用toolBar"
+                android:id="@+id/button5"
+                tools:layout_editor_absoluteY="75dp"
+                tools:layout_editor_absoluteX="-2dp" />
+            <Button
+                android:onClick="CoordinatorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用CoordinatorLayout"
+                android:id="@+id/button3"
+                tools:layout_editor_absoluteY="134dp"
+                tools:layout_editor_absoluteX="-13dp" />
+            <Button
+                android:onClick="AppBarLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用AppBarLayout"
+                android:id="@+id/button4"
+                tools:layout_editor_absoluteY="231dp"
+                tools:layout_editor_absoluteX="-12dp" />
 
-    <Button
-        android:onClick="BottomSheetBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BottomSheetBehavior"
-        android:id="@+id/button7"
-        tools:layout_editor_absoluteY="6dp"
-        tools:layout_editor_absoluteX="-3dp" />
-    <Button
-        android:onClick="SwipeDissMissBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SwipeDissMissBehavior"
-        tools:layout_editor_absoluteY="6dp"
-        tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="jianshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简书效果"
+                android:id="@+id/button6"
+                tools:layout_editor_absoluteY="301dp"
+                tools:layout_editor_absoluteX="16dp" />
 
-    <Button
-        android:onClick="CustomBehavior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CustomBehavior"
-        tools:layout_editor_absoluteY="6dp"
-        tools:layout_editor_absoluteX="-3dp" />
-    <Button
-        android:onClick="CustomBehavior2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CustomBehavior2"
-        tools:layout_editor_absoluteY="6dp"
-        tools:layout_editor_absoluteX="-3dp" />
-    <Button
-        android:onClick="snake"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="snake"
-        tools:layout_editor_absoluteY="6dp"
-        tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="BottomSheetBehavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BottomSheetBehavior"
+                android:id="@+id/button7"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="SwipeDissMissBehavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SwipeDissMissBehavior"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+
+            <Button
+                android:onClick="CustomBehavior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CustomBehavior"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="CustomBehavior2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CustomBehavior2"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="snake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="snake"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bottom"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+            <Button
+                android:onClick="textInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="textInput"
+                tools:layout_editor_absoluteY="6dp"
+                tools:layout_editor_absoluteX="-3dp" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
