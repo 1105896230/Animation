@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".BottomSheetDialogActivity" />
         <activity android:name=".ToolBarActivity" />
-        <activity android:name=".CoordinatorLayout"></activity>
+        <activity android:name=".CoordinatorLayout" />
+        <activity android:name=".AppbarLayoutActivity"></activity>
     </application>
 
 </manifest>
