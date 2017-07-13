@@ -33,4 +33,12 @@ public class MainActivity extends AppCompatActivity {
     public void jianshu(View view) {
         startActivity(new Intent(this,JianShuActivity.class));
     }
+
+    public void BottomSheetBehavior(View view) {
+        startActivity(new Intent(this,BottomSheetBehaviorActivity.class));
+    }
+
+    public void SwipeDissMissBehavior(View view) {
+        startActivity(new Intent(this,SwipeDissmissBehaviorActivity.class));
+    }
 }
