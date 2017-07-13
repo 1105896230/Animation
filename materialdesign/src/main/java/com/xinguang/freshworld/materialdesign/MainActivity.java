@@ -21,4 +21,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this,ToolBarActivity.class));
 
     }
+
+    public void CoordinatorLayout(View view) {
+        startActivity(new Intent(this,CoordinatorLayout.class));
+    }
 }

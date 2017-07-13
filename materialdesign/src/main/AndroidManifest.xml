@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BottomSheetDialogActivity" />
-        <activity android:name=".ToolBarActivity"></activity>
+        <activity android:name=".ToolBarActivity" />
+        <activity android:name=".CoordinatorLayout"></activity>
     </application>
 
 </manifest>
