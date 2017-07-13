@@ -29,4 +29,8 @@ public class MainActivity extends AppCompatActivity {
     public void AppBarLayout(View view) {
         startActivity(new Intent(this,AppbarLayoutActivity.class));
     }
+
+    public void jianshu(View view) {
+        startActivity(new Intent(this,JianShuActivity.class));
+    }
 }

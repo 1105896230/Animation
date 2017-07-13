@@ -19,7 +19,8 @@
         <activity android:name=".BottomSheetDialogActivity" />
         <activity android:name=".ToolBarActivity" />
         <activity android:name=".CoordinatorLayout" />
-        <activity android:name=".AppbarLayoutActivity"></activity>
+        <activity android:name=".AppbarLayoutActivity" />
+        <activity android:name=".JianShuActivity"></activity>
     </application>
 
 </manifest>
