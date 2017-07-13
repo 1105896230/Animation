@@ -49,4 +49,8 @@ public class MainActivity extends AppCompatActivity {
     public void CustomBehavior2(View view) {
         startActivity(new Intent(this,CustomBehavior2Activity.class));
     }
+
+    public void snake(View view) {
+        startActivity(new Intent(this,FABSimpleActivity.class));
+    }
 }

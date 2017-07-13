@@ -24,7 +24,8 @@
         <activity android:name=".BottomSheetBehaviorActivity" />
         <activity android:name=".SwipeDissmissBehaviorActivity" />
         <activity android:name=".CustomBehaviorActivity" />
-        <activity android:name=".CustomBehavior2Activity"></activity>
+        <activity android:name=".CustomBehavior2Activity" />
+        <activity android:name=".FABSimpleActivity"></activity>
     </application>
 
 </manifest>
