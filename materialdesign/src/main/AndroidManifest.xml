@@ -22,7 +22,9 @@
         <activity android:name=".AppbarLayoutActivity" />
         <activity android:name=".JianShuActivity" />
         <activity android:name=".BottomSheetBehaviorActivity" />
-        <activity android:name=".SwipeDissmissBehaviorActivity"></activity>
+        <activity android:name=".SwipeDissmissBehaviorActivity" />
+        <activity android:name=".CustomBehaviorActivity" />
+        <activity android:name=".CustomBehavior2Activity"></activity>
     </application>
 
 </manifest>

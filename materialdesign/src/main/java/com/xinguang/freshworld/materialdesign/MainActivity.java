@@ -41,4 +41,12 @@ public class MainActivity extends AppCompatActivity {
     public void SwipeDissMissBehavior(View view) {
         startActivity(new Intent(this,SwipeDissmissBehaviorActivity.class));
     }
+
+    public void CustomBehavior(View view) {
+        startActivity(new Intent(this,CustomBehaviorActivity.class));
+    }
+
+    public void CustomBehavior2(View view) {
+        startActivity(new Intent(this,CustomBehavior2Activity.class));
+    }
 }
