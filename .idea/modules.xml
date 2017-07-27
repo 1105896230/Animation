@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Animation.iml" filepath="$PROJECT_DIR$/Animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/animatorapp/animatorapp.iml" filepath="$PROJECT_DIR$/animatorapp/animatorapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arouterdemo/arouterdemo.iml" filepath="$PROJECT_DIR$/arouterdemo/arouterdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/customeview/customeview.iml" filepath="$PROJECT_DIR$/customeview/customeview.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
       <module fileurl="file://$PROJECT_DIR$/vectoranimator/vectoranimator.iml" filepath="$PROJECT_DIR$/vectoranimator/vectoranimator.iml" />
