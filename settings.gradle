@@ -1,1 +1,1 @@
-include ':app', ':vectoranimator', ':animatorapp', ':materialdesign'
+include ':app', ':vectoranimator', ':animatorapp', ':materialdesign', ':customeview'
